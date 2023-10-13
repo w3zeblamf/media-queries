@@ -20,4 +20,4 @@
 
 - [W3Schools | Screen size/browser window with JavaScript.](https://www.w3schools.com/howto/howto_js_get_current_window.asp#:~:text=Use%20window.,screen%20size%20of%20a%20page.)
 
-- [W3Schools | Responsive Web Design ]()
+- [W3Schools | Responsive Web Design ](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
