@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Breakpoints & Media Queries</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #333;
+        color: #f4f4f4;
+        text-align: center;
+        padding-top: 100px;
+      }
+
+      h1 {
+        display: none;
+      }
+
+      span {
+        font-size: 22px;
+        font-style: italic;
+      }
+
+      #info {
+        font-size: 20px;
+        font-weight: bold;
+        color: yellow;
+        margin-bottom: 30px;
+      }
+
+      /* Breakpoints & Media Queries */
+
+      /* Smartphones */
+      @media only screen and (max-width: 500px) {
+        body {
+          background: purple;
+        }
+
+        #smartphone h1 {
+          display: block;
+        }
+      }
+
+      /* Tablet */
+      @media (min-width: 501px) and (max-width: 768px) {
+        body {
+          background: blue;
+        }
+
+        #tablet h1 {
+          display: block;
+        }
+      }
+
+      /* Normal */
+      @media (min-width: 769px) and (max-width: 1200px) {
+        body {
+          background: green;
+        }
+
+        #normal h1 {
+          display: block;
+        }
+      }
+
+      /* Widescreen */
+      @media (min-width: 1201px) {
+        body {
+          background: black;
+        }
+
+        #widescreen h1 {
+          display: block;
+        }
+      }
+
+      /* Landscape */
+      @media (max-height: 500px) {
+        body {
+          background: orange;
+        }
+
+        #landscape h1 {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>The size of the current screen/window</h2>
+    <p>
+      Bellow you can see the browser window's height and width: (NOT including
+      toolbars/scrollbars)
+    </p>
+    
+<h3>Browser window width | height: </h3>
+    
+ <p id="info"></p>
+
+    <h3>"" Breakpoints & CSS Media Queries ""</h3>
+
+    <div id="smartphone">
+      <h1>
+        Smartphone <span> | @media only screen and (max-width: 500px)</span>
+      </h1>
+    </div>
+    <div id="normal">
+      <h1>
+        Normal <span> | @media (min-width: 769px) and (max-width: 1200px)</span>
+      </h1>
+    </div>
+    <div id="tablet">
+      <h1>
+        Tablet <span> | @media (min-width: 501px) and (max-width: 768px)</span>
+      </h1>
+    </div>
+    <div id="widescreen">
+      <h1>Widescreen <span> | @media (min-width: 1201px) </span></h1>
+    </div>
+    <div id="landscape">
+      <h1>Landscape <span> | @media (max-height: 500px)</span></h1>
+    </div>
+
+    <!-- Get the current screen size/browser window with JavaScript.-->
+    <script>
+      function displayBrowserWidth() {
+        const W = window.innerWidth;
+        const H = window.innerHeight;
+
+        document.querySelector(
+          "#info"
+        ).innerText = `${W}px | ${H}px`;
+      }
+
+      window.onload = displayBrowserWidth;
+      window.onresize = displayBrowserWidth;
+    </script>
+    <!-- EO script-->
+  </body>
+</html>
