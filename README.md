@@ -22,7 +22,7 @@ browser viewport width. Media queries are used for the following:
 
 #### Reference web page:
 
-- [MDN Web Doc | Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)
+- [MDN Web Docs | Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)
 
 - [W3Schools | Screen size/browser window with JavaScript.](https://www.w3schools.com/howto/howto_js_get_current_window.asp#:~:text=Use%20window.,screen%20size%20of%20a%20page.)
 
