@@ -1,4 +1,4 @@
-##  Responsive Web Design - Media Queries
+## Responsive Web Design - Media Queries
 
 ### What is a Media Query?
 
@@ -6,12 +6,18 @@
 
 > #### It uses the @media rule to include a block of CSS properties only if a certain condition is true.
 
- Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width. Media queries are used for the following:
+Media queries allow you to apply CSS styles depending on a device's general type
+(such as print vs. screen) or other characteristics such as screen resolution or
+browser viewport width. Media queries are used for the following:
 
 <ul>
-  <li>To conditionally apply styles with the <a href="/en-US/docs/Web/CSS">CSS</a> <a href="/en-US/docs/Web/CSS/@media"><code>@media</code></a> and <a href="/en-US/docs/Web/CSS/@import"><code>@import</code></a> <a href="/en-US/docs/Web/CSS/At-rule">at-rules</a>.</li>
-  <li>To target specific media for the <a href="/en-US/docs/Web/HTML/Element/style"><code>&lt;style&gt;</code></a>, <a href="/en-US/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a>, <a href="/en-US/docs/Web/HTML/Element/source"><code>&lt;source&gt;</code></a>, and other <a href="/en-US/docs/Web/HTML">HTML</a> elements with the <code>media=</code> attribute.</li>
-  <li>To <a href="/en-US/docs/Web/CSS/CSS_media_queries/Testing_media_queries">test and monitor media states</a> using the <a href="/en-US/docs/Web/API/Window/matchMedia"><code>Window.matchMedia()</code></a> and <a href="/en-US/docs/Web/API/EventTarget/addEventListener"><code>EventTarget.addEventListener()</code></a> methods.</li>
+  <li>To conditionally apply styles with the CSS <code>@media</code> and <code>@import</code> at-rules.</li>
+  
+  <li>To target specific media for the <code>&lt;style&gt;</code>, <code>&lt;link&gt;</code>, 
+  <code>&lt;source&gt;</code>, and other HTML elements with the <code>media=</code> attribute.</li>
+  
+  <li>To test and monitor media states using the <code>Window.matchMedia()</code> and <code>EventTarget.addEventListener()</code> methods.
+  </li>
 </ul>
 
 #### Reference web page:
