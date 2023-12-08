@@ -40,8 +40,8 @@
 
       /* Breakpoints & Media Queries */
 
-      /* Smartphones */
-      @media only screen and (max-width: 500px) {
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
         body {
           background: purple;
         }
@@ -51,8 +51,8 @@
         }
       }
 
-      /* Tablet */
-      @media (min-width: 501px) and (max-width: 768px) {
+     /* Small devices (portrait tablets and large phones, 601px to 768px) */
+      @media (min-width: 601px) and (max-width: 768px) {
         body {
           background: blue;
         }
@@ -62,19 +62,30 @@
         }
       }
 
-      /* Normal */
-      @media (min-width: 769px) and (max-width: 1200px) {
+			/* Medium devices (landscape tablets, 769px to 992px) */
+      @media (min-width: 769px) and (max-width: 992px) {
         body {
           background: green;
         }
 
-        #normal h1 {
+        #medium h1 {
           display: block;
         }
       }
+			
+			/* Large devices (laptops/desktops, 993px to 1200px) */
+			@media (min-width: 993px) and (max-width: 1200px) {
+        body {
+          background: red;
+        }
 
-      /* Widescreen */
-      @media (min-width: 1201px) {
+        #large h1 {
+          display: block;
+        }
+      }
+			
+			/* Extra large devices / (Widescreen / large laptops and desktops, 1201px and up) */
+      @media only screen and (min-width: 1201px) {
         body {
           background: black;
         }
@@ -112,22 +123,30 @@
 
     <div id="smartphone">
       <h1>
-        Smartphone <span> | @media only screen and (max-width: 500px)</span>
+        Extra small devices (Smartphones, 600px and down) <span> | @media only screen and (max-width: 600px)</span>
       </h1>
     </div>
-    <div id="normal">
-      <h1>
-        Normal <span> | @media (min-width: 769px) and (max-width: 1200px)</span>
-      </h1>
-    </div>
+   
     <div id="tablet">
       <h1>
-        Tablet <span> | @media (min-width: 501px) and (max-width: 768px)</span>
+        Small devices (portrait tablets and large phones, 601px to 768px) <span> | @media (min-width: 601px) and (max-width: 768px)</span>
       </h1>
     </div>
-    <div id="widescreen">
-      <h1>Widescreen <span> | @media (min-width: 1201px) </span></h1>
+    
+     <div id="medium">
+      <h1>
+        Medium devices (landscape tablets, 769px to 992px) <span> | @media (min-width: 769px) and (max-width: 992px)</span>
+      </h1>
     </div>
+    
+    <div id="large">
+    	<h1>Large devices (laptops / desktops, 993px to 1200px) <span> | @media (min-width: 993px) and (max-width: 1200px)</span></h1>
+    </div>
+    
+    <div id="widescreen">
+      <h1>Extra large devices (Widescreen / large laptops and desktops, 1201px and up) <span> | @media only screen and (min-width: 1201px) </span></h1>
+    </div>
+    
     <div id="landscape">
       <h1>Landscape <span> | @media (max-height: 500px)</span></h1>
     </div>
